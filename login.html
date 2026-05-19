@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login </title>
+        <style>
+
+    .login-box {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #f2f2f2;
+        border-radius: 15px;
+        border: 2px solid #df7878;
+        text-align: center;}
+
+        .register-box {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #f2f2f2;
+        border-radius: 15px;
+        border: 2px solid #df7878;
+        text-align: center;
+    }
+    .switch span{
+        color:blue;
+        font-weight:lighter;
+        cursor: pointer;
+        transition:0.3s;
+    }
+   
+</style>
+
+
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 60px; margin-top: 40px;">LOGIN BRAINPLAYING</h1>
+        <div class="login-box">
+            <h3>login</h3>  
+            <input type="text" placeholder="username">  
+            <input type="password" placeholder="password">
+            <button class="login-btn">accedi</button>
+            <p class="switch">non hai un account?<span onclick="showregister()">registrati</span></p>
+        </div>
+        <div class="register-box" style="display:none;">
+            <h3>registrati</h3>
+            <input type="text" placeholder="username">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="conferma password">
+            <button class="register-btn">crea il tuo account</button>
+            <p class="switch">hai già un account?<span onclick="showlogin()">accedi</span></p>
+        </div>
+
+        <script> function showregister(){
+            document.querySelector('.login-box').style.display="none";
+            document.querySelector('.register-box').style.display="block";
+        }
+        function showlogin(){
+            document.querySelector('.register-box').style.display="none";
+            document.querySelector('.login-box').style.display="block";
+        }
+        </script>
+       
+    </body>
+</html>
