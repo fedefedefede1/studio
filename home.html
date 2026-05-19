@@ -2,11 +2,55 @@
 <html>
     <head>
         <title> home </title>
+        <style>
+            .materie{
+                width: 90%;
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+            .materie-box{
+                background: #eae7e7;
+                border: 2px solid #df7878;
+                border-radius: 15px;
+                padding: 30px 10px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .materie-box:hover{
+                background: #df7878;
+                color: white;
+                transform: scale(1.05);
+            }
+        </style>
 
     </head>
     <body>
-        <h1 style="text-align: center; font-size: 60px; margin-top: 40px;">BRAINPLAYING</h1>
-        <p style="text-align: center; font-size: 20px; margin-top: 30px;">gioca,impara e scala le classifiche con brainplaying!</p>
+        <h1 style="text-align: center; font-size: 60px; margin-top: 40px;">MY_SPACE_STUDIO</h1>
+        <p style="text-align: center; font-size: 20px; margin-top: 30px;">gioca,impara e scala le classifiche con MySpaceStudio!</p>
+        <div class="materie">
+            <div class="materie-box" onclick="location.href='matematica.html'">matematica</div>
+            <div class="materie-box" onclick="location.href='letteratura.html'">letteratura</div>
+            <div class="materie-box" onclick="location.href='scienze.html'">scienze</div>
+            <div class="materie-box" onclick="location.href='storia.html'">storia</div>
+            <div class="materie-box" onclick="location.href='inglese.html'">inglese</div>
+            <div class="materie-box" onclick="location.href='informatica.html'">informatica</div>
+            <div class="materie-box" onclick="location.href='geografia.html'">geografia</div>
+            <div class="materie-box" onclick="location.href='fisica.html'">fisica</div>
+        </div>
+        <h1 style="text-align:center;">matematica</h1>
+        <div class="argomenti">
+            <div class="argomenti-box" onclick="location.href='equazioni.html'">equazioni</div>
+            <div class="argomenti-box" onclick="location.href='logaritmi.html'">logaritmi</div>
+            <div class="argomenti-box" onclick="location.href='espressioni.html'">espressioni</div>
+        </div>
+            
+            
+
 
     </body>
 </html>
